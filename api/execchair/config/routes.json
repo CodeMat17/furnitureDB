@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/execchairs",
+      "handler": "execchair.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/execchairs/count",
+      "handler": "execchair.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/execchairs/:id",
+      "handler": "execchair.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/execchairs",
+      "handler": "execchair.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/execchairs/:id",
+      "handler": "execchair.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/execchairs/:id",
+      "handler": "execchair.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

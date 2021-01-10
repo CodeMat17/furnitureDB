@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "execchairs",
+  "info": {
+    "name": "execchair",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "new": {
+      "type": "boolean"
+    },
+    "instock": {
+      "type": "boolean"
+    }
+  }
+}

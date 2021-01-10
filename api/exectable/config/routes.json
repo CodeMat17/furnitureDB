@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exectables",
+      "handler": "exectable.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exectables/count",
+      "handler": "exectable.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exectables/:id",
+      "handler": "exectable.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exectables",
+      "handler": "exectable.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exectables/:id",
+      "handler": "exectable.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exectables/:id",
+      "handler": "exectable.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
