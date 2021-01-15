@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "category"
+    "name": "category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,16 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "table": {
-      "type": "string"
+    "title": {
+      "type": "text"
     },
-    "chair": {
-      "type": "string"
-    },
-    "set": {
-      "type": "string"
-    },
-    "setImg": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,27 +25,9 @@
       "plugin": "upload",
       "required": false
     },
-    "tableImg": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "chairImg": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
+    "furnitures": {
+      "via": "category",
+      "collection": "furniture"
     }
   }
 }

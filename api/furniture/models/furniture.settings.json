@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "execchairs",
+  "collectionName": "furnitures",
   "info": {
-    "name": "execchair",
+    "name": "furniture",
     "description": ""
   },
   "options": {
@@ -12,9 +12,6 @@
   },
   "attributes": {
     "title": {
-      "type": "string"
-    },
-    "intro": {
       "type": "text"
     },
     "description": {
@@ -37,8 +34,12 @@
     "new": {
       "type": "boolean"
     },
-    "instock": {
+    "stock": {
       "type": "boolean"
+    },
+    "category": {
+      "model": "category",
+      "via": "furnitures"
     }
   }
 }
